@@ -1,5 +1,4 @@
-﻿using System;
-using System.Linq;
+﻿using System.Linq;
 using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
@@ -7,9 +6,10 @@ using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using Canonical.WebApp.Models;
-using Canonical.WebApp.Models.Manage;
+using Canonical.WebApp.ActionResults;
+using Canonical.WebApp.Features.Manage.Models;
 
-namespace Canonical.WebApp.Controllers
+namespace Canonical.WebApp.Features.Manage
 {
     [Authorize]
     public class ManageController : Controller
@@ -104,7 +104,7 @@ namespace Canonical.WebApp.Controllers
         // POST: /Manage/AddPhoneNumber
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> AddPhoneNumber(AddPhoneNumberViewModel model)
+        public async Task<ActionResult> AddPhoneNumber(AddPhoneNumberCommandModel model)
         {
             if (!ModelState.IsValid)
             {
@@ -296,7 +296,7 @@ namespace Canonical.WebApp.Controllers
         public ActionResult LinkLogin(string provider)
         {
             // Request a redirect to the external login provider to link a login for the current user
-            return new AccountController.ChallengeResult(provider, Url.Action("LinkLoginCallback", "Manage"), User.Identity.GetUserId());
+            return new ChallengeResult(provider, Url.Action("LinkLoginCallback", "Manage"), User.Identity.GetUserId());
         }
 
         //

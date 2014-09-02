@@ -5,7 +5,7 @@ using System.Text;
 using System.Web.Mvc;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Canonical.WebApp;
-using Canonical.WebApp.Controllers;
+using Canonical.WebApp.Features.Home;
 
 namespace Canonical.WebApp.Tests.Controllers
 {

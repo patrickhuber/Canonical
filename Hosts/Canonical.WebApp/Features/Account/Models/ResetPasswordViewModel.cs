@@ -4,9 +4,9 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
-namespace Canonical.WebApp.Models.Account
+namespace Canonical.WebApp.Features.Account.Models
 {
-    public class RegisterViewModel
+    public class ResetPasswordViewModel
     {
         [Required]
         [EmailAddress]
@@ -23,5 +23,7 @@ namespace Canonical.WebApp.Models.Account
         [Display(Name = "Confirm password")]
         [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
         public string ConfirmPassword { get; set; }
+
+        public string Code { get; set; }
     }
 }

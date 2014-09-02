@@ -153,37 +153,38 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ActionResults\ChallengeResult.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
-    <Compile Include="Controllers\AccountController.cs" />
-    <Compile Include="Controllers\CustomerController.cs" />
-    <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Features\Account\AccountController.cs" />
+    <Compile Include="Features\Customer\CustomerController.cs" />
+    <Compile Include="Features\Home\HomeController.cs" />
+    <Compile Include="Features\Manage\ManageController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\Account\ForgotPasswordViewModel.cs" />
-    <Compile Include="Models\Account\ExternalLoginConfirmationViewModel.cs" />
-    <Compile Include="Models\Account\ExternalLoginListViewModel.cs" />
-    <Compile Include="Models\Account\ForgotViewModel.cs" />
-    <Compile Include="Models\Account\LoginViewModel.cs" />
-    <Compile Include="Models\Account\RegisterViewModel.cs" />
-    <Compile Include="Models\Account\ResetPasswordViewModel.cs" />
-    <Compile Include="Models\Account\SendCodeViewModel.cs" />
-    <Compile Include="Models\Account\VerifyCodeViewModel.cs" />
+    <Compile Include="Features\Account\Models\ForgotPasswordViewModel.cs" />
+    <Compile Include="Features\Account\Models\ExternalLoginConfirmationViewModel.cs" />
+    <Compile Include="Features\Account\Models\ExternalLoginListViewModel.cs" />
+    <Compile Include="Features\Account\Models\ForgotViewModel.cs" />
+    <Compile Include="Features\Account\Models\LoginViewModel.cs" />
+    <Compile Include="Features\Account\Models\RegisterViewModel.cs" />
+    <Compile Include="Features\Account\Models\ResetPasswordViewModel.cs" />
+    <Compile Include="Features\Account\Models\SendCodeViewModel.cs" />
+    <Compile Include="Features\Account\Models\VerifyCodeViewModel.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
     <Compile Include="Models\ApplicationUser.cs" />
-    <Compile Include="Models\Manage\AddPhoneNumberViewModel.cs" />
-    <Compile Include="Models\Manage\ChangePasswordViewModel.cs" />
-    <Compile Include="Models\Manage\ConfigureTwoFactorViewModel.cs" />
-    <Compile Include="Models\Manage\FactorViewModel.cs" />
-    <Compile Include="Models\Manage\IndexViewModel.cs" />
-    <Compile Include="Models\Manage\ManageLoginsViewModel.cs" />
-    <Compile Include="Models\Manage\SetPasswordViewModel.cs" />
-    <Compile Include="Models\Manage\VerifyPhoneNumberViewModel.cs" />
+    <Compile Include="Features\Manage\Models\AddPhoneNumberCommandModel.cs" />
+    <Compile Include="Features\Manage\Models\ChangePasswordViewModel.cs" />
+    <Compile Include="Features\Manage\Models\ConfigureTwoFactorViewModel.cs" />
+    <Compile Include="Features\Manage\Models\FactorViewModel.cs" />
+    <Compile Include="Features\Manage\Models\IndexViewModel.cs" />
+    <Compile Include="Features\Manage\Models\ManageLoginsViewModel.cs" />
+    <Compile Include="Features\Manage\Models\SetPasswordViewModel.cs" />
+    <Compile Include="Features\Manage\Models\VerifyPhoneNumberViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -249,6 +250,18 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Features\Account\Handlers\" />
+    <Folder Include="Features\Account\Views\" />
+    <Folder Include="Features\Customer\Handlers\" />
+    <Folder Include="Features\Customer\Models\" />
+    <Folder Include="Features\Customer\Views\" />
+    <Folder Include="Features\Home\Handlers\" />
+    <Folder Include="Features\Home\Models\" />
+    <Folder Include="Features\Home\Views\" />
+    <Folder Include="Features\Manage\Handlers\" />
+    <Folder Include="Features\Manage\Views\" />
+    <Folder Include="Models\Account\" />
+    <Folder Include="Models\Manage\" />
     <Folder Include="Views\Customer\" />
   </ItemGroup>
   <ItemGroup>

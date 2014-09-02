@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
-namespace Canonical.WebApp.Models.Account
+namespace Canonical.WebApp.Features.Account.Models
 {    
     public class ForgotPasswordViewModel
     {

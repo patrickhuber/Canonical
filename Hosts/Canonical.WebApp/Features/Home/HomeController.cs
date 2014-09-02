@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace Canonical.WebApp.Controllers
+namespace Canonical.WebApp.Features.Home
 {
     public class HomeController : Controller
     {

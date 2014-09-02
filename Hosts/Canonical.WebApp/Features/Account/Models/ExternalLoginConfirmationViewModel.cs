@@ -4,9 +4,9 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
-namespace Canonical.WebApp.Models.Account
+namespace Canonical.WebApp.Features.Account.Models
 {
-    public class ForgotViewModel
+    public class ExternalLoginConfirmationViewModel
     {
         [Required]
         [Display(Name = "Email")]
