@@ -159,6 +159,7 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="App_Start\ViewEngineConfig.cs" />
     <Compile Include="Features\Account\AccountController.cs" />
     <Compile Include="Features\Customer\CustomerController.cs" />
     <Compile Include="Features\Home\HomeController.cs" />
@@ -220,49 +221,47 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
-    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Features\Home\Views\About.cshtml" />
+    <Content Include="Features\Home\Views\Contact.cshtml" />
+    <Content Include="Features\Home\Views\Index.cshtml" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
-    <Content Include="Views\Account\_ChangePasswordPartial.cshtml" />
-    <Content Include="Views\Account\_ExternalLoginsListPartial.cshtml" />
-    <Content Include="Views\Account\_RemoveAccountPartial.cshtml" />
-    <Content Include="Views\Account\_SetPasswordPartial.cshtml" />
-    <Content Include="Views\Account\ConfirmEmail.cshtml" />
-    <Content Include="Views\Account\ExternalLoginConfirmation.cshtml" />
-    <Content Include="Views\Account\ExternalLoginFailure.cshtml" />
-    <Content Include="Views\Account\ForgotPassword.cshtml" />
-    <Content Include="Views\Account\ForgotPasswordConfirmation.cshtml" />
-    <Content Include="Views\Account\Login.cshtml" />
-    <Content Include="Views\Account\Register.cshtml" />
-    <Content Include="Views\Account\ResetPassword.cshtml" />
-    <Content Include="Views\Account\ResetPasswordConfirmation.cshtml" />
-    <Content Include="Views\Account\SendCode.cshtml" />
-    <Content Include="Views\Account\VerifyCode.cshtml" />
-    <Content Include="Views\Manage\AddPhoneNumber.cshtml" />
-    <Content Include="Views\Manage\ChangePassword.cshtml" />
-    <Content Include="Views\Manage\Index.cshtml" />
-    <Content Include="Views\Manage\ManageLogins.cshtml" />
-    <Content Include="Views\Manage\SetPassword.cshtml" />
-    <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
+    <Content Include="Features\Account\Views\_ChangePasswordPartial.cshtml" />
+    <Content Include="Features\Account\Views\_ExternalLoginsListPartial.cshtml" />
+    <Content Include="Features\Account\Views\_RemoveAccountPartial.cshtml" />
+    <Content Include="Features\Account\Views\_SetPasswordPartial.cshtml" />
+    <Content Include="Features\Account\Views\ConfirmEmail.cshtml" />
+    <Content Include="Features\Account\Views\ExternalLoginConfirmation.cshtml" />
+    <Content Include="Features\Account\Views\ExternalLoginFailure.cshtml" />
+    <Content Include="Features\Account\Views\ForgotPassword.cshtml" />
+    <Content Include="Features\Account\Views\ForgotPasswordConfirmation.cshtml" />
+    <Content Include="Features\Account\Views\Login.cshtml" />
+    <Content Include="Features\Account\Views\Register.cshtml" />
+    <Content Include="Features\Account\Views\ResetPassword.cshtml" />
+    <Content Include="Features\Account\Views\ResetPasswordConfirmation.cshtml" />
+    <Content Include="Features\Account\Views\SendCode.cshtml" />
+    <Content Include="Features\Account\Views\VerifyCode.cshtml" />
+    <Content Include="Features\Manage\Views\AddPhoneNumber.cshtml" />
+    <Content Include="Features\Manage\Views\ChangePassword.cshtml" />
+    <Content Include="Features\Manage\Views\Index.cshtml" />
+    <Content Include="Features\Manage\Views\ManageLogins.cshtml" />
+    <Content Include="Features\Manage\Views\SetPassword.cshtml" />
+    <Content Include="Features\Manage\Views\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Features\Account\Handlers\" />
-    <Folder Include="Features\Account\Views\" />
     <Folder Include="Features\Customer\Handlers\" />
     <Folder Include="Features\Customer\Models\" />
     <Folder Include="Features\Customer\Views\" />
     <Folder Include="Features\Home\Handlers\" />
     <Folder Include="Features\Home\Models\" />
-    <Folder Include="Features\Home\Views\" />
     <Folder Include="Features\Manage\Handlers\" />
-    <Folder Include="Features\Manage\Views\" />
-    <Folder Include="Models\Account\" />
-    <Folder Include="Models\Manage\" />
+    <Folder Include="Views\Account\" />
     <Folder Include="Views\Customer\" />
+    <Folder Include="Views\Home\" />
+    <Folder Include="Views\Manage\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -270,6 +269,12 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Libraries\Canonical.Web.Mvc\Canonical.Web.Mvc.csproj">
+      <Project>{b8fd463a-f2cb-470c-98ba-fbdbb75b05b8}</Project>
+      <Name>Canonical.Web.Mvc</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
