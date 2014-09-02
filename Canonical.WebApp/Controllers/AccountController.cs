@@ -9,6 +9,7 @@ using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using Canonical.WebApp.Models;
+using Canonical.WebApp.Models.Account;
 
 namespace Canonical.WebApp.Controllers
 {
