@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Web.Mvc;
 
-namespace Canonical.Web.Mvc
+namespace Canonical.Web.Mvc.ViewEngines
 {
     public class FeatureRazorViewEngine : RazorViewEngine
     {

@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using Canonical.Web.Mvc.ViewEngines;
 using System.Web.Mvc;
 
 namespace Canonical.WebApp
@@ -11,7 +8,7 @@ namespace Canonical.WebApp
         public static void RegisterViewEngines(ViewEngineCollection viewEngines)
         {
             viewEngines.Clear();
-            viewEngines.Add(new Canonical.Web.Mvc.FeatureRazorViewEngine());
+            viewEngines.Add(new FeatureRazorViewEngine());
         }
     }
 }

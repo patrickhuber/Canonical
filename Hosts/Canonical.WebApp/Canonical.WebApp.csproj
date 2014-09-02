@@ -258,10 +258,6 @@
     <Folder Include="Features\Home\Handlers\" />
     <Folder Include="Features\Home\Models\" />
     <Folder Include="Features\Manage\Handlers\" />
-    <Folder Include="Views\Account\" />
-    <Folder Include="Views\Customer\" />
-    <Folder Include="Views\Home\" />
-    <Folder Include="Views\Manage\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

@@ -67,11 +67,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FeatureRazorViewEngine.cs" />
-    <Compile Include="ICommand.cs" />
-    <Compile Include="ICommandHandler.cs" />
-    <Compile Include="IQuery.cs" />
-    <Compile Include="IQueryHandler.cs" />
+    <Compile Include="ViewEngines\FeatureRazorViewEngine.cs" />
+    <Compile Include="Handlers\ICommand.cs" />
+    <Compile Include="Handlers\ICommandHandler.cs" />
+    <Compile Include="Handlers\IQuery.cs" />
+    <Compile Include="Handlers\IQueryHandler.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
