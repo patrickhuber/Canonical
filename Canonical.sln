@@ -3,11 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.30723.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Canonical.WebApp", "Canonical.WebApp\Canonical.WebApp.csproj", "{4C4020AA-2F19-4359-8B3B-990C2225CEE9}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Hosts", "Hosts", "{BE50339C-0394-4CB2-BC24-00A6E0074087}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Canonical.WebApp.Tests", "Canonical.WebApp.Tests\Canonical.WebApp.Tests.csproj", "{2982F998-21C1-468B-B09D-E1BAF0D93057}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libraries", "Libraries", "{E830B3D6-BDA7-40D1-94DD-42EC52035E33}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Canonical.Web.Mvc", "Canonical.Web.Mvc\Canonical.Web.Mvc.csproj", "{B8FD463A-F2CB-470C-98BA-FBDBB75B05B8}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{D3A75976-C5E0-4882-878E-1972BCC2D3F1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Canonical.DomainServices", "Hosts\Canonical.DomainServices\Canonical.DomainServices.csproj", "{DACAB6A9-414E-4FF4-B329-DEECA9D7A501}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Canonical.DomainServices.Tests", "Tests\Canonical.DomainServices.Tests\Canonical.DomainServices.Tests.csproj", "{E774DFCD-4E6A-4826-A06E-6E6B77330E8F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Canonical.WebApp.Tests", "Tests\Canonical.WebApp.Tests\Canonical.WebApp.Tests.csproj", "{2982F998-21C1-468B-B09D-E1BAF0D93057}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Canonical.Web.Mvc", "Libraries\Canonical.Web.Mvc\Canonical.Web.Mvc.csproj", "{B8FD463A-F2CB-470C-98BA-FBDBB75B05B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Canonical.WebApp", "Hosts\Canonical.WebApp\Canonical.WebApp.csproj", "{4C4020AA-2F19-4359-8B3B-990C2225CEE9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,10 +25,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{4C4020AA-2F19-4359-8B3B-990C2225CEE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4C4020AA-2F19-4359-8B3B-990C2225CEE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4C4020AA-2F19-4359-8B3B-990C2225CEE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4C4020AA-2F19-4359-8B3B-990C2225CEE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DACAB6A9-414E-4FF4-B329-DEECA9D7A501}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DACAB6A9-414E-4FF4-B329-DEECA9D7A501}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DACAB6A9-414E-4FF4-B329-DEECA9D7A501}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DACAB6A9-414E-4FF4-B329-DEECA9D7A501}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E774DFCD-4E6A-4826-A06E-6E6B77330E8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E774DFCD-4E6A-4826-A06E-6E6B77330E8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E774DFCD-4E6A-4826-A06E-6E6B77330E8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E774DFCD-4E6A-4826-A06E-6E6B77330E8F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{2982F998-21C1-468B-B09D-E1BAF0D93057}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{2982F998-21C1-468B-B09D-E1BAF0D93057}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2982F998-21C1-468B-B09D-E1BAF0D93057}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -27,8 +41,19 @@ Global
 		{B8FD463A-F2CB-470C-98BA-FBDBB75B05B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B8FD463A-F2CB-470C-98BA-FBDBB75B05B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B8FD463A-F2CB-470C-98BA-FBDBB75B05B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C4020AA-2F19-4359-8B3B-990C2225CEE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C4020AA-2F19-4359-8B3B-990C2225CEE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C4020AA-2F19-4359-8B3B-990C2225CEE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C4020AA-2F19-4359-8B3B-990C2225CEE9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DACAB6A9-414E-4FF4-B329-DEECA9D7A501} = {BE50339C-0394-4CB2-BC24-00A6E0074087}
+		{E774DFCD-4E6A-4826-A06E-6E6B77330E8F} = {D3A75976-C5E0-4882-878E-1972BCC2D3F1}
+		{2982F998-21C1-468B-B09D-E1BAF0D93057} = {D3A75976-C5E0-4882-878E-1972BCC2D3F1}
+		{B8FD463A-F2CB-470C-98BA-FBDBB75B05B8} = {E830B3D6-BDA7-40D1-94DD-42EC52035E33}
+		{4C4020AA-2F19-4359-8B3B-990C2225CEE9} = {BE50339C-0394-4CB2-BC24-00A6E0074087}
 	EndGlobalSection
 EndGlobal
