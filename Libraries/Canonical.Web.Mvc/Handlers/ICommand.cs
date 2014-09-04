@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Canonical.Web.Mvc.Handlers
 {
-    public interface ICommand
+    public interface ICommand<out TResult>
     {
     }
 }

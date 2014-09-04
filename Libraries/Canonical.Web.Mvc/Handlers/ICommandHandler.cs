@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace Canonical.Web.Mvc.Handlers
 {
-    interface ICommandHandler
+    public interface ICommandHandler<in TCommand, out TResult>
+        where TCommand : ICommand<TResult>
     {
+        TResult Handle(TCommand command);
     }
 }

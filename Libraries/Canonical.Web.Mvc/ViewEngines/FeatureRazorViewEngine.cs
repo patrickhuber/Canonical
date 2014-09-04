@@ -15,8 +15,10 @@ namespace Canonical.Web.Mvc.ViewEngines
             {
                 "~/Features/{1}/Views/{0}.cshtml",
                 "~/Features/{1}/Views/{0}.vbhtml",
-                "~/Features/Views/Shared/{0}.cshtml",
-                "~/Features/Views/Shared/{0}.vbhtml",
+                "~/Views/Shared/{0}.cshtml",
+                "~/Views/Shared/{0}.vbhtml",
+                "~/Areas/{2}/Features/{1}/Views/{0}.cshtml",
+                "~/Areas/{2}/Features/{1}/Views/{0}.vbhtml",
             };
 
             ViewLocationFormats = featureFolderViewLocationFormats;

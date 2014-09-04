@@ -69,6 +69,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Handlers\IMediator.cs" />
+    <Compile Include="Handlers\Mediator.cs" />
     <Compile Include="ViewEngines\FeatureRazorViewEngine.cs" />
     <Compile Include="Handlers\ICommand.cs" />
     <Compile Include="Handlers\ICommandHandler.cs" />
@@ -79,7 +81,7 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />  
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
