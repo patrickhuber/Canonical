@@ -57,6 +57,7 @@
     <Compile Include="PurchaseOrderLineItem.cs" />
     <Compile Include="SalesOrder.cs" />
     <Compile Include="SalesOrderCreationMethod.cs" />
+    <Compile Include="SalesOrderDetail.cs" />
     <Compile Include="SalesOrderStatus.cs" />
     <Compile Include="SalesPerson.cs" />
     <Compile Include="StateProvidence.cs" />

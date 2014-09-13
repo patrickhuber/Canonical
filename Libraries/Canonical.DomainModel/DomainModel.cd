@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="Canonical.DomainModel.Customer">
-    <Position X="11" Y="3.75" Width="1.5" />
+    <Position X="11.5" Y="3.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAACAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Customer.cs</FileName>
@@ -11,7 +11,7 @@
     </ShowAsCollectionAssociation>
   </Class>
   <Class Name="Canonical.DomainModel.CustomerAddress">
-    <Position X="11" Y="1.75" Width="1.5" />
+    <Position X="11.5" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAA=</HashCode>
       <FileName>CustomerAddress.cs</FileName>
@@ -21,7 +21,7 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="Canonical.DomainModel.Address">
-    <Position X="8" Y="1.25" Width="1.5" />
+    <Position X="8.5" Y="1.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAACAAAAAAAAAAAIIAAAAAAAAAAAAAAgCAAAQAAAAAA=</HashCode>
       <FileName>Address.cs</FileName>
@@ -31,7 +31,7 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="Canonical.DomainModel.StateProvidence">
-    <Position X="5" Y="1.5" Width="1.5" />
+    <Position X="5.5" Y="1.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAACAAAAAAAAAAAAAAAAAAQAAgAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>StateProvidence.cs</FileName>
@@ -41,21 +41,21 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="Canonical.DomainModel.CountryRegion">
-    <Position X="2" Y="1.5" Width="1.5" />
+    <Position X="2.5" Y="1.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAgAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>CountryRegion.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Canonical.DomainModel.EmailAddress" Collapsed="true">
-    <Position X="13.5" Y="1.25" Width="1.5" />
+  <Class Name="Canonical.DomainModel.EmailAddress">
+    <Position X="5.5" Y="5.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAA=</HashCode>
       <FileName>EmailAddress.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Canonical.DomainModel.IndividualCustomer">
-    <Position X="11" Y="5.5" Width="1.5" />
+    <Position X="8.5" Y="3.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>IndividualCustomer.cs</FileName>
@@ -65,11 +65,103 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="Canonical.DomainModel.Contact">
-    <Position X="8" Y="4.75" Width="1.5" />
+    <Position X="8.5" Y="4.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAACAEAAAAAAAEAAAAAQAAAAAAAAAAAAACAAAgAAAAg=</HashCode>
       <FileName>Contact.cs</FileName>
     </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="EmailAddress" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Canonical.DomainModel.Product">
+    <Position X="8.25" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Product.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Canonical.DomainModel.PurchaseOrder">
+    <Position X="5" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAACAAAAAAAAAABAAAAAAAAAAAA=</HashCode>
+      <FileName>PurchaseOrder.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Vendor" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="LineItems" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Canonical.DomainModel.PurchaseOrderLineItem">
+    <Position X="8" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAACAAAAAAAAAAAABBAAAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>PurchaseOrderLineItem.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="PurchaseOrder" />
+      <Property Name="Product" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Canonical.DomainModel.SalesOrder">
+    <Position X="13.5" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAECAAAEAAAAAAEACAAAAAAAAAAAIAQAAAAAAAAAAAA=</HashCode>
+      <FileName>SalesOrder.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Status" />
+      <Property Name="Customer" />
+      <Property Name="Contact" />
+      <Property Name="SalesPerson" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Canonical.DomainModel.SalesPerson">
+    <Position X="11" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SalesPerson.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Canonical.DomainModel.SalesOrderStatus" Collapsed="true">
+    <Position X="14" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAACAIQAAAgAgAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SalesOrderStatus.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Canonical.DomainModel.Vendor">
+    <Position X="2" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEACAAAEAAAAAAAAABAAAAQAAAgAAIAgCAAAAAAAAAA=</HashCode>
+      <FileName>Vendor.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Status" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="PurchaseOrders" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Canonical.DomainModel.VendorStatus" Collapsed="true">
+    <Position X="2" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAAAAAAAAAAQAAAAIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>VendorStatus.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Canonical.DomainModel.SalesOrderDetail">
+    <Position X="10.75" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAABAAAAAABAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SalesOrderDetail.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="SalesOrder" />
+      <Property Name="Product" />
+    </ShowAsAssociation>
   </Class>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>

@@ -23,5 +23,7 @@ namespace Canonical.DomainModel
         public Contact Contact { get; set; }
 
         public SalesPerson SalesPerson { get; set; }
+
+        public ICollection<SalesOrderDetail> SalesOrderDetailList { get; set; }
     }
 }
